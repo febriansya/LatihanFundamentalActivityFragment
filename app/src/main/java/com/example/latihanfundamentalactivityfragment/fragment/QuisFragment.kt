@@ -39,6 +39,8 @@ class QuisFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+//        put data dengan properties yang ada di data class
         buttonToProfile = view.findViewById(R.id.to_profile)
         buttonToProfile.setOnClickListener {
             val identitasProfile = Profile(
@@ -60,6 +62,7 @@ class QuisFragment : Fragment() {
         hasil = view.findViewById(R.id.tv_hasil)
 
 
+//        check kondisi radio grup
         buttonPilih.setOnClickListener {
             val check = Rg.checkedRadioButtonId
             if (check != -1) {

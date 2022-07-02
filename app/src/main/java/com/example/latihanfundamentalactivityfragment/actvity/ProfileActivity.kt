@@ -30,6 +30,7 @@ class ProfileActivity : AppCompatActivity() {
         pendidikan = findViewById(R.id.id_pendidikan)
 
 
+//        ngambil data objek dari data class lewat quisFragment
         val objectProfile = intent.getParcelableExtra<Profile>(EXTRA_PROFILE) as Profile
 
         nama.text = "nama saya adalah ${objectProfile.nama}"
